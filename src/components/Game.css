@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Nosifer&family=VT323&display=swap");
+
+
+.body{
+  width:100vw;
+  height:100vh;
+  margin: -9px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.welcome{
+  position:absolute;
+  top: 30%;
+  width:100vw;
+  height:100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  animation: start 4s ease-in-out;
+  visibility: hidden;
+}
+
+@keyframes start{
+  0%{
+    opacity: 1;
+    visibility: visible;
+  }
+  100%{
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes form{
+  0%{
+    opacity: 0;
+    visibility: hidden;
+  }
+  50%{
+    opacity: 0;
+    visibility: hidden;
+  }
+  100%{
+    visibility: visible;
+  }
+}
+
+h2{
+    background-image: linear-gradient(to right, rgb(246, 244, 244) , rgb(250, 247, 247));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 4px 4px 4px #fefdfd5a;
+    font-size: 50px;
+    font-family: "Nosifer", sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+.spng{
+  background-image: url('./spongebob.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 0;
+  margin-left: 10px;
+  width:280px;
+  height:260px;
+  z-index: -1;
+  opacity: 0;
+  animation: move 2s 2s ease-in forwards;
+  transition: opacity 1s ease; 
+
+}
+.game-container {
+    background-color: #faf7f7;
+    border-radius:30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width:300px;
+    padding: 20px;
+    color: #030303;
+    margin-top: 0px;
+    animation: form 5s;
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h1 {
+    color: #0a0a0a;
+    font-size: 30px;
+    font-family: "Nosifer", sans-serif;
+    text-align: center;
+    margin-top: 0px;
+  }
+
+  h3{
+    margin:0;
+  }
+  input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 200px;
+    text-align: center;
+  }
+  
+  .game-button {
+    padding: 10px 20px;
+    background-color: #222220;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .game-button:hover {
+    background-color: #cbce39;
+    color: #030303;
+    border:1px solid #030303;
+  }
+  
+  p {
+    font-size: 18px;
+  }
+  /* .back {
+    background-size: cover; Ensures the image covers the entire container 
+    background-position: center; Centers the background image 
+    /* background-repeat: no-repeat; Prevents the image from repeating } */
+.back{
+    background-image: url('./blueBack.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100vw;
+    height:100vh;
+    position:absolute;
+    left:0%;
+    top:0%;
+    z-index:-1;
+}
+.correct{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width:100vw;
+  height:100vh;
+}
+.img{
+  background-image: url('./Spongehappy.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:400px;
+  height:250px;
+
+}
+.score{
+  margin-bottom: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.btn button{
+  background-color: rgb(55, 211, 228);
+  color: #030303;
+  margin-right: 10px;
+}
+.btn .game-button1{
+  width:110px;
+  height:40px;
+  border: none;
+  border-radius: 6px;
+
+}
+.btn .game-button2{
+  margin-left: 20px;
+  width:100px;
+  height:40px;
+  border: none;
+  border-radius: 6px;
+
+}
+.btn .game-button2:hover{
+
+  background-color: red;
+}
+
+.btn .game-button1:hover{
+  background-color: rgb(18, 216, 144);
+}
+
+
+@keyframes move{
+  0%{
+    transform: translateY(300px); /* Middle of the viewport */
+    opacity: 0;   
+
+  }
+  50%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+    transform: translate(0px);
+  }
+}
+
+

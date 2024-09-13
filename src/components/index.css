@@ -1,0 +1,15 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base{
+    h1{
+        font-family: 'Luckiest Guy', sans-serif ;
+    }
+    body{
+        font-family: 'DynaPuff', sans-serif;
+    }
+    input{
+        font-family:  sans-serif ;
+    }
+}
